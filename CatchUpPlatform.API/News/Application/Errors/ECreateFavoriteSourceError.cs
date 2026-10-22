@@ -1,4 +1,4 @@
-namespace CatchUpPlatform.API.News.Applications.Errors;
+namespace CatchUpPlatform.API.News.Application.Errors;
 
 public enum ECreateFavoriteSourceError
 {

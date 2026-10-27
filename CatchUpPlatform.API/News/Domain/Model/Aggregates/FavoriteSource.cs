@@ -1,7 +1,7 @@
 using CatchUpPlatform.API.News.Domain.Model.Commands;
 using CatchUpPlatform.API.News.Domain.Model.ValueObjects;
 
-namespace CatchUpPlatform.API.News.Domain.Model.Aggregate;
+namespace CatchUpPlatform.API.News.Domain.Model.Aggregates;
 
 public partial class FavoriteSource
 {

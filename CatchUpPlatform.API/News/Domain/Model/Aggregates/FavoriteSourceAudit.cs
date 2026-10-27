@@ -1,6 +1,6 @@
 using CatchUpPlatform.API.Shared.Domain.Model;
 
-namespace CatchUpPlatform.API.News.Domain.Model.Aggregate;
+namespace CatchUpPlatform.API.News.Domain.Model.Aggregates;
 
 public partial class FavoriteSource : IAuditableEntity
 {

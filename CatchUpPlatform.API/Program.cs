@@ -21,8 +21,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddLocalization();
 
 // Add services to the container.
-builder.Services.AddRouting(options => options.LowercaseUrls = true); 
-
+// builder.Services.AddRouting(options => options.LowercaseUrls = true); 
+builder.Services.AddRouting(options => options.LowercaseUrls = false);
 builder.Services.AddControllers(options => options.Conventions.Add(new KebabCaseRouteNamingConvention()))
     .AddDataAnnotationsLocalization(options =>
         options.DataAnnotationLocalizerProvider = (_, factory) => factory.Create(typeof(SharedResource)))

@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
 namespace CatchUpPlatform.API.Shared.Infrastructure.Interfaces.Asp.Configuration;
 
+/// <summary>
+///     Application model convention that transforms controller route templates into lowercase kebab-case.
+/// </summary>
 public class KebabCaseRouteNamingConvention : IControllerModelConvention
 {
     private static AttributeRouteModel? ReplaceControllerTemplate(SelectorModel selector, string name)
@@ -12,6 +15,7 @@ public class KebabCaseRouteNamingConvention : IControllerModelConvention
             : null;
     }
     
+    /// <inheritdoc />
     public void Apply(ControllerModel controller)
     {
         foreach (var selector in controller.Selectors)

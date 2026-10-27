@@ -6,14 +6,20 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CatchUpPlatform.API.Shared.Infrastructure.Persistence.EntityFrameworkCore.Configuration;
 
+/// <summary>
+///     Represents the Entity Framework Core database context for the CatchUp Platform API.
+/// </summary>
+/// <param name="options">The options to be used by the <see cref="DbContext"/>.</param>
 public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {
+    /// <inheritdoc />
     protected override void OnConfiguring(DbContextOptionsBuilder builder)
     {
         builder.AddInterceptors(new AuditableEntityInterceptor());
         base.OnConfiguring(builder);
     }
 
+    /// <inheritdoc />
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);

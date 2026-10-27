@@ -9,6 +9,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CatchUpPlatform.API.News.Application.Internal.CommandServices;
 
+/// <summary>
+///     Application command service that implements <see cref="IFavoriteSourceCommandService"/> to handle favorite source creation.
+/// </summary>
+/// <param name="favoriteSourceRepository">The favorite source repository.</param>
+/// <param name="unitOfWork">The unit of work used to commit changes.</param>
+/// <param name="logger">Logger for diagnostics and audit logging.</param>
 public class FavoriteSourceCommandService(
     IFavoriteSourceRepository favoriteSourceRepository,
     IUnitOfWork unitOfWork,
@@ -27,6 +33,7 @@ public class FavoriteSourceCommandService(
         return false;
     }
     
+    /// <inheritdoc />
     public async Task<Result<FavoriteSource, ECreateFavoriteSourceError>> Handle(CreateFavoriteSourceCommand command, CancellationToken cancellationToken)
     {
         var existingSource = await favoriteSourceRepository.FindByNewsApiKeyAndSourceIdAsync(command.NewsApiKey, command.SourceId, cancellationToken);

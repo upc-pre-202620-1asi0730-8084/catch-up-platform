@@ -1,4 +1,4 @@
-using CatchUpPlatform.API.News.Domain.Model.Aggregate;
+using CatchUpPlatform.API.News.Domain.Model.Aggregates;
 using CatchUpPlatform.API.News.Domain.Model.ValueObjects;
 using CatchUpPlatform.API.News.Domain.Repositories;
 using CatchUpPlatform.API.Shared.Infrastructure.Persistence.EntityFrameworkCore.Configuration;

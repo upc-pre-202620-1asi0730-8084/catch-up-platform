@@ -1,6 +1,6 @@
 using CatchUpPlatform.API.News.Application.Errors;
 using CatchUpPlatform.API.News.Application.Services;
-using CatchUpPlatform.API.News.Domain.Model.Aggregate;
+using CatchUpPlatform.API.News.Domain.Model.Aggregates;
 using CatchUpPlatform.API.News.Domain.Model.Commands;
 using CatchUpPlatform.API.News.Domain.Repositories;
 using CatchUpPlatform.API.Shared.Application.Patterns;

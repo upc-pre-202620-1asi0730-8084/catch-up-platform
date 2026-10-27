@@ -1,4 +1,4 @@
-using CatchUpPlatform.API.News.Domain.Model.Aggregate;
+using CatchUpPlatform.API.News.Domain.Model.Aggregates;
 using CatchUpPlatform.API.News.Interfaces.Rest.Resources;
 
 namespace CatchUpPlatform.API.News.Interfaces.Rest.Transform;

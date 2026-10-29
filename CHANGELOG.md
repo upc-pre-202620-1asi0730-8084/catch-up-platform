@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2026-10-29
+
+### Added
+
+- **Project Documentation**:
+  - Comprehensive study guide (`docs/study-guide.md`) for analyzing the RESTful API codebase, covering architecture, design patterns, and bounded contexts.
+  - Study guide specification (`docs/study-guide-spec.md`).
+
+### Fixed
+
+- **Configuration**:
+  - Updated MySQL database password in development configuration (`appsettings.Development.json`).
+
 ## [1.0.0] - 2026-10-27
 
 ### Added
